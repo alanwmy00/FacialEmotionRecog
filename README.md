@@ -3,7 +3,7 @@
 **Team Members**: [Alan Wang](https://github.com/alanwmy00), Amy Tang, Isaac No, Joy Richardson, [Philip Huang](https://github.com/philhuang74), Tim Chen  
 [Data](Data/face.csv), [Code](FacialEmotionRecognition.ipynb), [Presentation](Facial%20Emotion%20Recognition.pptx)
 
-Table of Contents:
+**Table of Contents**:
 - [Facial Emotion Recognition](#facial-emotion-recognition)
   - [Abstract](#abstract)
   - [1. Introduction](#1-introduction)
