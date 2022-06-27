@@ -72,9 +72,7 @@ and then take the average of all per-class F-scores to get the macro F-score:
 $$\textit{macro}\ F =  \frac{1}{k} \cdot ∑_{i = 1}^k F_i$$
 
 For deep learning libraries such as Tensorflow, such definition is enough for the moment as we can simply add an additional metric \`macro f1\`, but for traditional machine learning algorithms, macro F-score is not integrated: by default, calling the \`score\` function would calculate the accuracy. Thus, for convenience, we decide to use accuracy as our metrics, which is defined as: 
-$$
-accuracy =\frac{ \text {number of correct predictions }}{\text {number of total predictions }}
-$$
+$$accuracy =\frac{ \text {number of correct predictions }}{\text {number of total predictions }}$$
 
 Although accuracy is easier to calculate and implement in practice, we also need to ensure that we have a balanced dataset – in the case of a extremely imbalanced dataset, the model can just predict any input to the most dominant label and reach a high accuracy, even when the model is not good at all under any other metrics. Therefore, we first plot a histogram of count of labels:
 
