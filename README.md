@@ -155,7 +155,7 @@ where we project the data into a higher dimension to then be able to separate da
 
 In our case, covariance matrix is (performed by scikit-learn) calculated by
 
-$$\frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i j}-\bar{x}_{j}\right)\left(x_{i k}-\bar{x}_{k}\right)$$
+$$\frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i j}-\bar{x}_j\right)\left(x _{i k}-\bar{x}_k\right)$$
 
 
 Selecting eigenvectors of this covariance matrix means getting a reduced version (eigenimage) of the original faces, and we project each instance to such an eigenspace spanned by 50 (we used a rough estimate of 50) eigenvectors, hugely reduced the dimension from 2304 (48 by 48) to 50. We can use the reconstruction step to project the 50-dimension dataset back to the original space to see the before and after effect of PCA. After we retrieve the 50-D dataset, we implement the SVM, which projects features to higher dimensions, using the default radial basis function kernel algorithm.
@@ -176,10 +176,11 @@ with the following set of equations:
 
 $$
 \begin{gathered}
-\underset{N \times 4}{\mathbf{X}} \mathbf{W}_{4 \times 3}^{(1)}+\underset{N \times 1}{\mathbf{J}} \mathbf{B}_{1 \times 3}^{(1) T}=\mathbf{z}_{N \times 3}^{(2)} \\
-f\left(\mathbf{z}_{N \times 3}^{(2)}\right)=\underset{N \times 3}{\mathbf{a}^{(2)}} \\
-\underset{N \times 3}{\mathbf{a}^{(2)}} \mathbf{W}_{3 \times 3}^{(2)}+\underset{N \times 1}{\mathbf{J}} \mathbf{B}_{1 \times 3}^{(2) T}=\underset{N \times 3}{\mathbf{z}^{(3)}} \\
-f\left(\mathbf{z}_{N \times 3}^{(3)}\right)=\underset{N \times 3}{\hat{\mathbf{y}}}
+\underset{N \times 4}{\mathbf{X}} \underset{4 \times 3}{\mathbf{W}^{(1)}}+\underset{N \times 1}{\mathbf{J}} \underset{{1 \times 3}}{\mathbf{B}^{(1) T}}=\underset{{N \times 3}}{\mathbf{z}^{(2)}} 
+\\
+f(\underset{N \times 3}{\mathbf{z}^{(2)}})=\underset{N \times 3}{\mathbf{a}^{(2)}} \\
+\underset{N \times 3}{\mathbf{a}^{(2)}} \underset{3 \times 3}{\mathbf{W}^{(2)}}+\underset{N \times 1}{\mathbf{J}} \underset{1 \times 3}{\mathbf{B}^{(2) T}}=\underset{N \times 3}{\mathbf{z}^{(3)}} \\
+f(\underset{N \times 3}{\mathbf{z}^{(3)}})=\underset{N \times 3}{\hat{\mathbf{y}}}
 \end{gathered}
 $$
 
