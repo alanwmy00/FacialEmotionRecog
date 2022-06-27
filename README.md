@@ -219,7 +219,15 @@ In our dataset, we feed the flattened normalized pixels into the neural network 
 All the methods discussed from section 2.1 to 2.6 are more generalized classification models, but the convolutional neural network is specifically designed for image classification. Compared to other models, CNN looks at the relationship between pixels and determines if a certain feature exists at a certain location through the use of convolution kernels. Suppose we have a picture of an “X”, binary and 7 by 7, represented by the matrix below
 
 $$
-X=\left(\begin{array}{lllllll}0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 1 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 1 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 0 & 0 & 0\end{array}\right) \in \mathbb{R}^{7 \times 7}
+X=\left(\begin{array}{lllllll}
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 1 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 1 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0
+\end{array}\right) \in \mathbb{R}^{7 \times 7}
 $$
 
 If we want to detect the feature dignonal, we can represent the feature with a 3 \* 3 identity matrix, called convolution kernel:
