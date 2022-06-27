@@ -74,7 +74,7 @@ $$\textit{macro}\ F =  \frac{1}{k} \cdot ∑_{i = 1}^k F_i$$
 
 For deep learning libraries such as Tensorflow, such definition is enough for the moment as we can simply add an additional metric \`macro f1\`, but for traditional machine learning algorithms, macro F-score is not integrated: by default, calling the \`score\` function would calculate the accuracy. Thus, for convenience, we decide to use accuracy as our metrics, which is defined as: 
 $$
-accuracy =\frac{\\# \text { of correct predictions }}{\\# \text { of total predictions }}
+accuracy =\frac{ \text {number of correct predictions }}{\text {number of total predictions }}
 $$
 
 Although accuracy is easier to calculate and implement in practice, we also need to ensure that we have a balanced dataset – in the case of a extremely imbalanced dataset, the model can just predict any input to the most dominant label and reach a high accuracy, even when the model is not good at all under any other metrics. Therefore, we first plot a histogram of count of labels:
@@ -315,16 +315,16 @@ Between the classification methods that were covered in this entire project, one
 
 ## 4. Cited Works
 
-“1.1. Linear Models.” *Scikit-Learn*, scikit-learn.org/stable/modules/linear_model.html\#logistic-regression.
+> “1.1. Linear Models.” *Scikit-Learn*, scikit-learn.org/stable/modules/linear_model.html\#logistic-regression.
 
-Alizadeh, Shima, and Azar Fazel. “Convolutional Neural Networks for Facial Expression Recognition”. https://arxiv.org/abs/1704.06756.
+> Alizadeh, Shima, and Azar Fazel. “Convolutional Neural Networks for Facial Expression Recognition”. https://arxiv.org/abs/1704.06756.
 
-Daumé, Hal, III. “A Course in Machine Learning”.
+> Daumé, Hal, III. “A Course in Machine Learning”.
 
-Geron. “Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow”.
+> Geron. “Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow”.
 
-“Introduction to Convolutional Neural Networks CNNs”. https://aigents.co/data-science-blog/publication/introduction-to-convolutional-neural-networks-cnns.
+> “Introduction to Convolutional Neural Networks CNNs”. https://aigents.co/data-science-blog/publication/introduction-to-convolutional-neural-networks-cnns.
 
-Singhal, Aaditya. “Facial Expression Dataset.” Kaggle, 26 Dec. 2020, https://www.kaggle.com/datasets/aadityasinghal/facial-expression-dataset.
+> Singhal, Aaditya. “Facial Expression Dataset.” Kaggle, 26 Dec. 2020, https://www.kaggle.com/datasets/aadityasinghal/facial-expression-dataset.
 
-Yiu, Tony. “Understanding Random Forest - Towards Data Science.” *Medium*, 10 Dec. 2021, towardsdatascience.com/understanding-random-forest-58381e0602d2.
+> Yiu, Tony. “Understanding Random Forest - Towards Data Science.” *Medium*, 10 Dec. 2021, towardsdatascience.com/understanding-random-forest-58381e0602d2.
