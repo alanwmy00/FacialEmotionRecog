@@ -3,6 +3,12 @@
 **Team Members**: [Alan Wang](https://github.com/alanwmy00), Amy Tang, Isaac No, Joy Richardson, [Philip Huang](https://github.com/philhuang74), Tim Chen  
 [Data](Data/face.csv), [Code](FacialEmotionRecognition.ipynb), [Presentation](Facial%20Emotion%20Recognition.pptx)
 
+## Abstract
+
+With the exponential progress in artificial intelligence, one particular field that has been in development is facial emotion recognition. Much research today revolves around the deep learning process in recognizing something as abstract as human emotions. This process serves to have several types of complications based upon detecting specific facial features within a given set of parameters. There are many applications for this technology including, but not limited to, personalized advertisements based on customer satisfaction, percepting certain behaviors within given environments, and recreating or simulating actions for further purposes. Considering these applications, several classification methods serve to have higher efficiencies in processing given information while reaching a solvable state – a correct recognition and categorization. This research report aims to explore these differences, primarily focusing on the process of implementing the models and their achieved results.
+
+Our group builds a facial emotion recognition machine learning model. We explore classification methods such as Naive Bayes Classifier, Logistic Regression, KNN, Random Forest, and SVM using scikit-learn. In addition, we perform cross validation to find the optimal hyperparameters in increasing efficiency or decreasing the margin of error. In the end, we implement an artificial neural network and a convoluted neural network in TensorFlow for such classification. Overall, we will utilize each of our models on the validation set and the testing set and use accuracy as the metric of the performance of each model.
+
 ## Table of Contents
 - [Abstract](#abstract)
  - [1. Introduction](#1-introduction)
@@ -21,12 +27,6 @@
    - [3.1 Results](#31-results)
    - [3.2 Afterword](#32-afterword)
   - [4. Cited Works](#4-cited-works)
-
-## Abstract
-
-With the exponential progress in artificial intelligence, one particular field that has been in development is facial emotion recognition. Much research today revolves around the deep learning process in recognizing something as abstract as human emotions. This process serves to have several types of complications based upon detecting specific facial features within a given set of parameters. There are many applications for this technology including, but not limited to, personalized advertisements based on customer satisfaction, percepting certain behaviors within given environments, and recreating or simulating actions for further purposes. Considering these applications, several classification methods serve to have higher efficiencies in processing given information while reaching a solvable state – a correct recognition and categorization. This research report aims to explore these differences, primarily focusing on the process of implementing the models and their achieved results.
-
-Our group builds a facial emotion recognition machine learning model. We explore classification methods such as Naive Bayes Classifier, Logistic Regression, KNN, Random Forest, and SVM using scikit-learn. In addition, we perform cross validation to find the optimal hyperparameters in increasing efficiency or decreasing the margin of error. In the end, we implement an artificial neural network and a convoluted neural network in TensorFlow for such classification. Overall, we will utilize each of our models on the validation set and the testing set and use accuracy as the metric of the performance of each model.
 
 ## 1. Introduction
 
