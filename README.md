@@ -1,7 +1,7 @@
 # Facial Emotion Recognition
 
 **Team Members**: [Alan Wang](https://github.com/alanwmy00), Amy Tang, Isaac No, Joy Richardson, [Philip Huang](https://github.com/philhuang74), Tim Chen  
-[Data](Data/face.csv), [Code](FacialEmotionRecognition.ipynb), [Presentation](Facial%20Emotion%20Recognition.pptx)
+[Data](Data/face.csv), [Code](FacialEmotionRecognition.ipynb), [Presentation](Facial%20Emotion%20Recognition.pptx), [PDF Report](Final%20Report.pdf)
 
 ## Abstract
 
@@ -10,22 +10,24 @@ With the exponential progress in artificial intelligence, one particular field t
 Our group builds a facial emotion recognition machine learning model. We explore classification methods such as Naive Bayes Classifier, Logistic Regression, KNN, Random Forest, and SVM using scikit-learn. In addition, we perform cross validation to find the optimal hyperparameters in increasing efficiency or decreasing the margin of error. In the end, we implement an artificial neural network and a convoluted neural network in TensorFlow for such classification. Overall, we will utilize each of our models on the validation set and the testing set and use accuracy as the metric of the performance of each model.
 
 ## Table of Contents
-- [Abstract](#abstract)
- - [1. Introduction](#1-introduction)
-   - [1.1 Dataset](#11-dataset)
-   - [1.2 Data Preprocessing & Exploratory Data Analysis](#12-data-preprocessing--exploratory-data-analysis)
- - [2. Modeling](#2-modeling)
-   - [2.1 Naive Bayes Classifier](#21-naive-bayes-classifier)
-   - [2.2 Logistic Regression](#22-logistic-regression)
-   - [2.3 K-means + Logistic Regression](#23-k-means--logistic-regression)
-   - [2.4 K-Nearest Neighbors with PCA + CV](#24-k-nearest-neighbors-with-pca--cv)
-   - [2.5 Random Forest](#25-random-forest)
-   - [2.6 Support Vector Machine with PCA](#26-support-vector-machine-with-pca)
-   - [2.7 Artificial Neural Network](#27-artificial-neural-network)
-   - [2.8 Convolutional Neural Network](#28-convolutional-neural-network)
- - [3. Conclusion](#3-conclusion)
-   - [3.1 Results](#31-results)
-   - [3.2 Afterword](#32-afterword)
+- [Facial Emotion Recognition](#facial-emotion-recognition)
+  - [Abstract](#abstract)
+  - [Table of Contents](#table-of-contents)
+  - [1. Introduction](#1-introduction)
+    - [1.1 Dataset](#11-dataset)
+    - [1.2 Data Preprocessing & Exploratory Data Analysis](#12-data-preprocessing--exploratory-data-analysis)
+  - [2. Modeling](#2-modeling)
+    - [2.1 Naive Bayes Classifier](#21-naive-bayes-classifier)
+    - [2.2 Logistic Regression](#22-logistic-regression)
+    - [2.3 K-means + Logistic Regression](#23-k-means--logistic-regression)
+    - [2.4 K-Nearest Neighbors with PCA + CV](#24-k-nearest-neighbors-with-pca--cv)
+    - [2.5 Random Forest](#25-random-forest)
+    - [2.6 Support Vector Machine with PCA](#26-support-vector-machine-with-pca)
+    - [2.7 Artificial Neural Network](#27-artificial-neural-network)
+    - [2.8 Convolutional Neural Network](#28-convolutional-neural-network)
+  - [3. Conclusion](#3-conclusion)
+    - [3.1 Results](#31-results)
+    - [3.2 Afterword](#32-afterword)
   - [4. Cited Works](#4-cited-works)
 
 ## 1. Introduction
