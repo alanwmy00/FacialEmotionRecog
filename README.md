@@ -105,15 +105,12 @@ Using scikit-learn in Python, we performed Gaussian Naive Bayes on our dataset. 
 Logistic regression is a linear model for classification. In particular, it is a resourceful supervised machine learning algorithm used for binary classification problems, in which the target can be categorized. Not only is it an easy method to use to model the probability of a discrete outcome given an input, as opposed to linear regression, this method does not need to have a linear relationship between inputs and corresponding outputs. This is particularly due to its characteristic of utilizing a logistic function, which is bounded between 0 and 1, to which a nonlinear log transformation is applied to the odds ratio.
 
 The logistic regression model can be represented by
-$$
-p\left(C_{1} \mid \phi\right)=y(\phi)=\sigma\left(w^{-T} \phi\right) \text { such that } \sigma(a)=\frac{1}{1+\exp (-a)}
-$$
+$$p\left(C_{1} \mid \phi\right)=y(\phi)=\sigma\left(w^{-T} \phi\right) \text { such that } \sigma(a)=\frac{1}{1+\exp (-a)}$$
 
 which is known as the logistic sigmoid function.
 
-
 Furthermore, logistic regression minimizes the following cost function:
-$$\min _{w,\ c} \frac{1}{2} w^{T} w+C \sum_{i=1}^{n} \log \left(\exp \left(-y_{i}\left(X_{i}^{T} w+c\right)\right)+1\right)$$
+$$\min_{w,\ c} \frac{1}{2} w^{T} w+C \sum_{i=1}^{n} \log \left(\exp \left(-y_{i}\left(X_{i}^{T} w+c\right)\right)+1\right)$$
 
 We use scikit-learn log regression package to run our data after cross validation separation. Logistic regression enables us to find the probability of new test data belonging to each class (in this case, supervised since we already have 7 groups of emotions). In general, we have 7 probability results for each new test data, and we put the new datapoint to the group of the highest probability.
 
