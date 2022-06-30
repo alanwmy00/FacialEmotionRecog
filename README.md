@@ -93,7 +93,7 @@ $$
 P\left(y \mid x_{1}, \ldots, x_{n}\right)=\frac{P(y) P\left(x_{1}, \ldots, x_{n} \mid y\right)}{P\left(x_{1}, \ldots, x_{n}\right)}
 $$
 
-where y is the class variable and $x_1$ through xn are various features. The “naive” assumption of Bayes is based on strong independence between the features $x_1, ..., x_n$. In other words, the covariances are assumed to be 0. It does not take into account the weight of one variable over another. For example, if trying to classify an orange, the classifier may take into account color, shape, and size. So a round, orange object with a diameter of approximately 3 inches would be considered an orange. The features color, shape, and size are assumed to contribute equally to the probability that this object is an orange. In this sense, all x variables are equally important to determining y.
+where y is the class variable and $x_1$ through $x_n$ are various features. The “naive” assumption of Bayes is based on strong independence between the features $x_1, ..., x_n$. In other words, the covariances are assumed to be 0. It does not take into account the weight of one variable over another. For example, if trying to classify an orange, the classifier may take into account color, shape, and size. So a round, orange object with a diameter of approximately 3 inches would be considered an orange. The features color, shape, and size are assumed to contribute equally to the probability that this object is an orange. In this sense, all x variables are equally important to determining y.
 
 Despite the simplicity of the classifier, Naive Bayes works well in real world situations as a document classifier and spam filter. It only requires a small amount of training data and is very fast. On the other hand, though it works well as a classifier, Naive Bayes performs poorly as an estimator, which is why we use it for classification purposes only.
 
@@ -229,7 +229,7 @@ X=\left(\begin{array}{lllllll}
 \end{array}\right) \in \mathbb{R}^{7 \times 7}
 $$
 
-If we want to detect the feature dignonal, we can represent the feature with a 3 \* 3 identity matrix, called convolution kernel:
+If we want to detect the feature dignonal, we can represent the feature with a 3 $\times$ 3 identity matrix, called convolution kernel:
 
 
 $$
