@@ -35,7 +35,7 @@ Our group builds a facial emotion recognition machine learning model. We explore
 
 Our task is therefore to train a multi-class classification model for facial emotion recognition.
 
-For our purposes, we use a dataset of grayscale faces, from a Kaggle competition dataset by Aaditya Singhal. Our dataset consists of 28709 faces, with each face consisting of 48 by 48 pixels, and each pixel is a value from 0 to 255. Each face is also centered and occupies similar space throughout the dataset.
+For our purposes, we use a dataset of grayscale faces, from a Kaggle competition dataset by Aaditya Singhal. Our dataset consists of 28,709 faces, with each face consisting of 48 by 48 pixels, and each pixel is a value from 0 to 255. Each face is also centered and occupies similar space throughout the dataset.
 
 There are seven facial expressions covered in this dataset, represented with numeric labels, and the expressions for the labels are shown in the table below:
 
