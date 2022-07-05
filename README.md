@@ -184,11 +184,10 @@ f(\underset{N \times 3}{\mathbf{z}^{(3)}})=\underset{N \times 3}{\hat{\mathbf{y}
 $$
 
 This step is referred to as “forward propagation”. By defining a loss function, we can then calculate the loss between the predicted values y hat and the true values y:
-$$
-\mathcal{J}=\frac{1}{2} \sum_{n}\left(y_{n}-\hat{y}_{n}\right)^{2}
-$$
+$$\mathcal{J}=\frac{1}{2} \sum_{n}\left(y_{n}-\hat{y}_{n}\right)^{2}$$
 
 We can then perform “backward propagation”, find the gradient of the loss function with respect to each weight and bias matrix, and perform gradient descent. For our example, the gradient are as follows:
+
 $$
 \begin{gathered}
 \frac{\partial J}{\partial W^{(2)}}=\mathbf{a}^{(2) T} \delta^{(3)} \\
@@ -200,12 +199,10 @@ $$
 
 where
 
-$$
-\begin{gathered}
+$$\begin{gathered}
 \delta^{(3)}=-(\mathbf{y}-\hat{\mathbf{y}}) \odot f^{\prime}\left(\mathbf{z}^{(3)}\right) \\
 \delta^{(2)}=\delta^{(3)}\left(\mathbf{W}^{(2)}\right)^{T} \odot f^{\prime}\left(\mathbf{z}^{(2)}\right)
-\end{gathered}
-$$
+\end{gathered}$$
 
 where $\odot$ represents element wise multiplication.
 
